@@ -74,7 +74,7 @@ with(selected_dataset, lines(Sub_metering_3~full_date,
 
 # adding legend in the right top corner
 legend("topright", legend=c(colnames(selected_dataset[,energy_columns])), 
-       border = "white",
+       bty = "n",
        col= c("black", "red", "blue"), lwd = 1, cex=0.75)
 
 #4) Global re-ctive power vs. Weekday-Time
