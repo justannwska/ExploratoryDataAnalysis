@@ -75,11 +75,12 @@ with(selected_dataset, lines(Sub_metering_3~full_date,
 # adding legend in the right top corner
 legend("topright", legend=c(colnames(selected_dataset[,energy_columns])), 
        bty = "n",
-       col= c("black", "red", "blue"), lwd = 1, cex=0.75)
+       col= c("black", "red", "blue"), lwd = 1, cex=0.8)
 
 #4) Global re-ctive power vs. Weekday-Time
 with(selected_dataset, plot(Global_reactive_power~full_date, type='l', 
                             xlab = "datetime"))
+
 
 
 dev.off()
